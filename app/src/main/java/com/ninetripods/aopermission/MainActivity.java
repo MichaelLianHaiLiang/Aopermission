@@ -10,14 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.ninetripods.aopermission.permissionlib.annotation.NeedPermission;
 import com.ninetripods.aopermission.permissionlib.annotation.PermissionCanceled;
 import com.ninetripods.aopermission.permissionlib.annotation.PermissionDenied;
 import com.ninetripods.aopermission.permissionlib.bean.CancelBean;
 import com.ninetripods.aopermission.permissionlib.bean.DenyBean;
 import com.ninetripods.aopermission.permissionlib.util.SettingUtil;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -79,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 权限被拒绝
-     *
+     * TODO 此处是通过反射调用此方法
      * @param bean DenyBean
      */
     @PermissionDenied
